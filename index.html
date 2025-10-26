@@ -86,8 +86,17 @@
 
         <div class="border border-dashed border-gray-700 rounded-lg p-6 text-center">
           <p class="text-sm text-gray-400 mb-3">[مكان إدراج كود الـ Content Locker من CPA Build]</p>
-          <button disabled class="opacity-80 bg-gray-700 px-4 py-3 rounded-lg text-sm">لوكر محلي (معاينة)</button>
-        </div>
+          <button id="cta-button" class="bg-red-600 hover:bg-red-700 px-4 py-3 rounded-lg text-sm text-white font-semibold transition">
+  🎬 Get Free Netflix Premium Access
+</button>
+
+<script>
+document.getElementById("cta-button").addEventListener("click", function(e){
+  e.preventDefault();
+  window.open("https://unlock-content.net/?e354b96", "_blank");
+});
+</script>
+
 
         <p class="text-xs text-gray-500 mt-3">Troubleshooting: إن لم يعمل الـ locker، جرّب متصفح آخر أو تعطيل مانع الإعلانات.</p>
       </div>
@@ -160,4 +169,5 @@
   <script src="https://unlock-content.net/?e354b96"></script>
 </body>
 </html>
+
 
