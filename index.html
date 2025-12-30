@@ -1,91 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Netflix Premium Access</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #000;
-      color: #fff;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      text-align: center;
-      margin: 0;
-      padding: 0;
-    }
-    h1 {
-      color: #e50914;
-      font-size: 2em;
-      margin-bottom: 10px;
-    }
-    p {
-      font-size: 1rem;
-      color: #ccc;
-      margin-bottom: 20px;
-      max-width: 300px;
-    }
-    #timer {
-      color: #e50914;
-      font-weight: bold;
-      margin-bottom: 15px;
-      font-size: 1.1rem;
-    }
-    button {
-      background-color: #e50914;
-      border: none;
-      padding: 14px 28px;
-      border-radius: 8px;
-      font-size: 16px;
-      font-weight: bold;
-      color: white;
-      cursor: pointer;
-      transition: 0.3s;
-    }
-    button:hover {
-      background-color: #b00610;
-    }
-    small {
-      margin-top: 20px;
-      color: #888;
-      font-size: 0.8rem;
-    }
-  </style>
+<meta charset="UTF-8">
+<title>Netflix Premium Access</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin:0;
+  font-family:Arial, Helvetica, sans-serif;
+  background:#0b0b0b;
+  color:white;
+  text-align:center;
+}
+.container{
+  max-width:520px;
+  margin:auto;
+  padding:25px;
+}
+h1{
+  color:#e50914;
+  font-size:26px;
+}
+.subtitle{
+  font-size:15px;
+  color:#ccc;
+  margin-bottom:15px;
+}
+.box{
+  background:#141414;
+  border-radius:12px;
+  padding:20px;
+  box-shadow:0 0 20px rgba(0,0,0,0.6);
+}
+ul{
+  text-align:left;
+  margin:15px 0;
+}
+ul li{
+  margin-bottom:8px;
+}
+button{
+  background:#e50914;
+  border:none;
+  color:white;
+  padding:15px;
+  width:100%;
+  font-size:17px;
+  border-radius:8px;
+  cursor:pointer;
+}
+button:hover{
+  opacity:0.9;
+}
+.urgency{
+  margin-top:15px;
+  color:#ff5555;
+  font-size:13px;
+}
+.stars{
+  margin:15px 0;
+  color:gold;
+}
+.faq{
+  text-align:left;
+  font-size:14px;
+}
+.footer{
+  margin-top:15px;
+  font-size:12px;
+  color:#888;
+}
+</style>
 </head>
+
 <body>
-  <h1>🎬 Netflix Premium Access</h1>
-  <p>Unlock unlimited movies and series for free. Limited-time offer available now!</p>
+<div class="container">
 
-  <div id="timer">Offer expires in <span id="countdown">02:00</span></div>
+<h1>🎬 Unlock Netflix Premium Access</h1>
+<div class="subtitle">
+Watch your favorite series & movies in Premium quality.<br>
+Works in France, Belgium & Canada 🇫🇷🇧🇪🇨🇦
+</div>
 
-  <button id="cta-button">Unlock Now</button>
+<div class="box">
 
-  <small>Troubleshooting: إن لم يعمل الـ locker، جرّب متصفح آخر أو تعطيل مانع الإعلانات.</small>
+<ul>
+<li>✔️ Netflix Premium Access</li>
+<li>✔️ Works on Mobile, PC & Smart TV</li>
+<li>✔️ No credit card required</li>
+<li>✔️ Verified method used by thousands</li>
+</ul>
 
-  <script>
-    // 🔹 كود العدّاد الزمني (2 دقايق)
-    let time = 2 * 60; // 2 minutes
-    const countdown = document.getElementById("countdown");
-    const timer = setInterval(() => {
-      const minutes = Math.floor(time / 60);
-      const seconds = time % 60;
-      countdown.textContent = `${minutes.toString().padStart(2,'0')}:${seconds.toString().padStart(2,'0')}`;
-      time--;
-      if (time < 0) {
-        clearInterval(timer);
-        countdown.textContent = "00:00";
-      }
-    }, 1000);
+<button onclick="openLocker()">🔓 Unlock Premium Now</button>
 
-    // 🔹 فتح لوكر CPA Build
-    document.getElementById("cta-button").addEventListener("click", function(e){
-      e.preventDefault();
-      window.open("https://unlock-content.net/?e354b96", "_blank");
-    });
-  </script>
+<div class="urgency">
+⚠️ Limited number of free accesses available today.
+</div>
+
+<div class="stars">
+★★★★★
+</div>
+
+<div class="faq">
+<b>Is this safe?</b><br>
+Yes. Verification is handled by official partners.<br><br>
+
+<b>How long does it take?</b><br>
+Less than 2 minutes.<br><br>
+
+<b>Do I need a credit card?</b><br>
+No card required.
+</div>
+
+<button style="margin-top:15px;" onclick="openLocker()">🎬 Get Netflix Premium Access</button>
+
+</div>
+
+<div class="footer">
+If the locker does not appear, try another browser or disable ad-block.
+</div>
+
+</div>
+
+<script>
+function openLocker(){
+  window.open("https://smrturl.co/e3ae904");
+}
+</script>
+
 </body>
 </html>
